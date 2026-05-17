@@ -1,0 +1,68 @@
+import { Level } from '../types';
+
+export const LEVELS: Level[] = [
+  {
+    id: 1,
+    name: "Beginner's Lot",
+    width: 800,
+    height: 600,
+    startPos: { x: 400, y: 500, angle: 0 },
+    parkingZone: { id: 'p1', x: 400, y: 150, width: 40, height: 80, angle: 0 },
+    timeLimit: 30,
+    scoreBonus: 1000,
+    obstacles: [
+      { x: 200, y: 300, width: 200, height: 20, angle: 0, type: 'wall', color: '#ff0055' },
+      { x: 600, y: 300, width: 200, height: 20, angle: 0, type: 'wall', color: '#ff0055' },
+      { x: 100, y: 150, width: 40, height: 80, angle: 0, type: 'car', color: '#333' },
+      { x: 700, y: 150, width: 40, height: 80, angle: 0, type: 'car', color: '#333' },
+    ],
+  },
+  {
+    id: 2,
+    name: "Narrow Pass",
+    width: 800,
+    height: 600,
+    startPos: { x: 100, y: 500, angle: Math.PI / 2 },
+    parkingZone: { id: 'p2', x: 700, y: 100, width: 40, height: 80, angle: -Math.PI / 4 },
+    timeLimit: 45,
+    scoreBonus: 2000,
+    obstacles: [
+      { x: 400, y: 300, width: 400, height: 40, angle: 0.2, type: 'wall', color: '#ff0055' },
+      { x: 400, y: 450, width: 400, height: 40, angle: 0.2, type: 'wall', color: '#ff0055' },
+      { x: 550, y: 100, width: 40, height: 40, angle: 0, type: 'cone', color: '#ffaa00' },
+      { x: 600, y: 200, width: 40, height: 40, angle: 0, type: 'cone', color: '#ffaa00' },
+    ],
+  },
+  {
+    id: 3,
+    name: "Parallel Parking Hell",
+    width: 800,
+    height: 600,
+    startPos: { x: 100, y: 300, angle: Math.PI / 2 },
+    parkingZone: { id: 'p3', x: 400, y: 100, width: 80, height: 40, angle: 0 },
+    timeLimit: 40,
+    scoreBonus: 3000,
+    obstacles: [
+      { x: 300, y: 100, width: 80, height: 40, angle: 0, type: 'car', color: '#555' },
+      { x: 500, y: 100, width: 80, height: 40, angle: 0, type: 'car', color: '#555' },
+      { x: 400, y: 300, width: 20, height: 400, angle: 0, type: 'wall', color: '#ff0055' },
+    ],
+  },
+  {
+    id: 4,
+    name: "Drift King",
+    width: 800,
+    height: 600,
+    startPos: { x: 400, y: 100, angle: Math.PI },
+    parkingZone: { id: 'p4', x: 400, y: 500, width: 40, height: 80, angle: 0 },
+    timeLimit: 25,
+    scoreBonus: 5000,
+    obstacles: [
+      { x: 200, y: 300, width: 50, height: 50, angle: 0, type: 'cone', color: '#ffaa00' },
+      { x: 400, y: 300, width: 50, height: 50, angle: 0, type: 'cone', color: '#ffaa00' },
+      { x: 600, y: 300, width: 50, height: 50, angle: 0, type: 'cone', color: '#ffaa00' },
+      { x: 100, y: 500, width: 20, height: 200, angle: 0.5, type: 'wall', color: '#ff0055' },
+      { x: 700, y: 500, width: 20, height: 200, angle: -0.5, type: 'wall', color: '#ff0055' },
+    ],
+  },
+];

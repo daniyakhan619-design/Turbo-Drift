@@ -1,0 +1,8 @@
+{
+  "name": "Turbo Drift",
+  "description": "A high-octane 2D car parking and driving game with realistic physics, challenging levels, and neon arcade aesthetics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
